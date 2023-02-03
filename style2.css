@@ -38,7 +38,7 @@ article {
     padding:5px;
     background-color: black;
     display: grid;
-    grid-template-columns: 110px 110px 110px 110px;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: 200px 100px 300px;
 }
 
@@ -50,3 +50,11 @@ main h1 {
     padding:10px;
     color:#339900;
 }
+
+article div:nth-child(1) { /*Az első div helye */
+    grid-column-start: 2; /*kezdő oszlop */
+    grid-column-end: 3; /*utolsó utáni oszlop */
+    grid-row-start: 1; /*kezdő sor */
+    grid-row-end: 2; /*utolsó utáni sor */
+    }
+    

@@ -38,15 +38,25 @@ article {
     padding:5px;
     background-color: black;
     display: grid;
-    grid-template-columns: 110px 110px 110px 110px;
-    grid-template-rows: 200px 100px 300px;
+    grid-template-columns: 200px 200px 500px 200px;
+    grid-template-rows: 50% 100px 300px;
 }
+
+
 
 article div{
     text-align:center;
-    color:lightgrey;}
+    color:lightgrey;
+}
 
 main h1 {
     padding:10px;
     color:#339900;
 }
+
+article div:nth-child(6) { 
+    grid-column:2 / span 4; 
+    grid-row: 1 /2; 
+    } 
+    
+        
